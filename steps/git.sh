@@ -31,17 +31,6 @@ echo "----------------------------------------"
 
 echo
 echo "========================================"
-echo "Using local version of submodules (if they exist)"
-echo "---------------------------------------------"
-"$PWD/.github/add-local-submodules.sh" "SymbiFlow/sv-tests"
-echo "---------------------------------------------"
-git submodule foreach --recursive 'git remote -v; echo'
-echo "---------------------------------------------"
-git submodule status --recursive
-echo "---------------------------------------------"
-
-echo
-echo "========================================"
 echo "Git log"
 echo "----------------------------------------"
 git log -n 5 --graph
